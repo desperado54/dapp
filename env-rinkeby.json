@@ -1,0 +1,8 @@
+{
+    "local":false,
+    "abiFile": "./build/contracts/ERC20.json",
+    "providerUrl": "https://rinkeby.infura.io/v3/05c4205740d347d9bf0e30b77b2ac960",
+    "privateKey": "e0a2afdfea4ede6ea5ce1ac3f6807fa9205234c09056de89bb9901d51a1070df",
+    "tokenOwner": "0x2BAf968Bcbf12a5116cE1D4901C00BCfb2379507",
+    "networkId": 4
+}

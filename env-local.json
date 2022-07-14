@@ -1,0 +1,8 @@
+{
+    "local":true,
+    "abiFile": "./build/contracts/ERC20.json",
+    "providerUrl": "http://127.0.0.1:7545",
+    "privateKey": "bdc7a0f18e8a4a5b6a577414c7b0c0d2ac5d22e60b814167d507f14447222db9",
+    "tokenOwner": "0xf084369e0D50939bfC08D81A079801962100E0C0",
+    "networkId": 5777
+}

@@ -1,0 +1,1 @@
+npx hardhat verify --network goerli 0x1241fAD05bAD0013ED35814d9e88B2f7297E5d44 'C Token' 'KKK' '70000000000000000000000'
