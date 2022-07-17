@@ -1,5 +1,4 @@
 const config = require('../config');
-const Tx = require('ethereumjs-tx');
 const {owner, tokenAddress, contract, web3, privateKey} = config;
 
 async function balanceOf(adress) {
@@ -9,7 +8,7 @@ async function balanceOf(adress) {
 }
 
 async function transfer(from, to, amount) {
-    if(from == owner) {
+    if(from.toLowerCase()  == owner.toLowerCase()) {
         const nonce = await web3.eth.getTransactionCount(owner, "latest");
         const wei = web3.utils.toWei(amount, 'ether');
         const data = contract.methods.transfer(to, wei).encodeABI()
@@ -22,12 +21,6 @@ async function transfer(from, to, amount) {
         }
 
         const signedTx = await web3.eth.accounts.signTransaction(rawTx, privateKey);
-       
-        //var transaction = new Tx(rawTx)
-        //transaction.sign(privateKey)
-
-        //web3.eth.sendSignedTransaction('0x' + transaction.serialize().toString('hex'))
-        //    .on('receipt', console.log);
         web3.eth.sendSignedTransaction(signedTx.rawTransaction) 
              .on('receipt', console.log);
     } else {

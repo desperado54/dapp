@@ -1,1 +1,2 @@
-npx hardhat verify --network goerli 0x1241fAD05bAD0013ED35814d9e88B2f7297E5d44 'C Token' 'KKK' '70000000000000000000000'
+npx hardhat run .\scripts\erc20.deploy.ts --network goerli
+npx hardhat verify --network goerli 0xA53404902267b878f1296a627655c59F9e1F1bb3 'C Token' 'KKK' '70000000000000000000000'
