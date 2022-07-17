@@ -12,6 +12,10 @@ export default {
       url: "https://goerli.infura.io/v3/" + process.env.INFURA_KEY,
       accounts: [`${process.env.PRIVATE_KEY}`],
     },
+    local: {
+      url: "https://goerli.infura.io/v3/" + process.env.INFURA_KEY,
+      accounts: [`${process.env.PRIVATE_KEY}`],
+    },
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,

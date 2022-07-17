@@ -1,8 +1,8 @@
 const config = require('../config');
 const {owner, tokenAddress, contract, web3, privateKey} = config;
 
-async function balanceOf(adress) {
-    let result = await contract.methods.balanceOf(adress).call();
+async function balanceOf(address) {
+    let result = await contract.methods.balanceOf(address).call();
 
     return result;
 }

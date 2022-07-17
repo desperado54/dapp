@@ -30,7 +30,8 @@ function buildConfig(argv) {
     'contract': contract,
     'owner': env.tokenOwner,
     'tokenAddress': tokenAddress,
-    'privateKey': env.privateKey
+    'privateKey': env.privateKey,
+    'abiFile':abiFile
     };
 
     console.log('loading.........')
