@@ -1,0 +1,8 @@
+{
+    "local":false,
+    "abiFile": "./build/contracts/ERC20.json",
+    "providerUrl": "https://goerli.infura.io/v3/05c4205740d347d9bf0e30b77b2ac960",
+    "privateKey": "d1150c6bf723bb8ebf95d8c4534f73a998357049b89e9208026d72ef8b468d76",
+    "tokenOwner": "0x26bdf75C1A3559060B10206AC99Af5A6dAb2aA03",
+    "networkId": 5
+}
